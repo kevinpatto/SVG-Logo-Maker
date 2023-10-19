@@ -14,6 +14,8 @@ Run `node index.js` in a node environment. Enter answers to the inquirer questio
 
 ![screenshot of application](screenshot.png)
 
+[Link to video preview](https://drive.google.com/file/d/1kfmVndDr0nM-zrP_CyNkW-dmwZJ6pded/view?usp=sharing)
+
 ## Credits
 N/A
 
