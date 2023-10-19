@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const { Triangle, Circle, Square } = require('./lib/shapes');
 
 inquirer
     .prompt ([
@@ -26,5 +27,18 @@ inquirer
     ])
     .then((response) => {
         const { text, textColor, shape, shapeColor } = response;
+        switch (shape) {
+            case 'circle':
+                renderShape = new Circle(text, textColor, shapeColor);
+                break;
+            case 'square':
+                renderShape = new Square(text, textColor, shapeColor);
+                break;
+            case 'triangle':
+                renderShape = new Triangle(text, textColor, shapeColor);
+                break;
+        }
+        
+        renderShape.writeToFile();
     })
     .catch ((err) => console.log(err));
